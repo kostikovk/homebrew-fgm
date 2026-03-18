@@ -5,20 +5,20 @@
 class Fgm < Formula
   desc "Fast Go toolchain manager with golangci-lint compatibility support"
   homepage "https://github.com/kostikovk/fgm"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kostikovk/fgm/releases/download/v0.1.0/fgm_0.1.0_darwin_amd64.tar.gz"
-      sha256 "7ae255917501903afe9375e74dc17fdad632e6e80ac331dbee4660ec940b7c2f"
+      url "https://github.com/kostikovk/fgm/releases/download/v0.2.0/fgm_0.2.0_darwin_amd64.tar.gz"
+      sha256 "05e9a552c61c6a4f4f53a05618dcc732452ca2b1fc8915f6cd80faa2ddecca9e"
 
       define_method(:install) do
         bin.install "fgm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kostikovk/fgm/releases/download/v0.1.0/fgm_0.1.0_darwin_arm64.tar.gz"
-      sha256 "518159f1dc105f19d5cbd8bed4a0e667d6f38724e9dd364d42cb1293c63f0878"
+      url "https://github.com/kostikovk/fgm/releases/download/v0.2.0/fgm_0.2.0_darwin_arm64.tar.gz"
+      sha256 "96d63a91309e9b235ab8dbd4c403f41c8ae40a8dff18ebe587fa67e170337189"
 
       define_method(:install) do
         bin.install "fgm"
@@ -28,15 +28,15 @@ class Fgm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kostikovk/fgm/releases/download/v0.1.0/fgm_0.1.0_linux_amd64.tar.gz"
-      sha256 "09fa467dca7188313700231f5c598a7c0f0d9bab2d4ae648989d5651282008a2"
+      url "https://github.com/kostikovk/fgm/releases/download/v0.2.0/fgm_0.2.0_linux_amd64.tar.gz"
+      sha256 "f09412f9c1cddbf498bd250626d67d89b5085c3c71b1481952427df79f24bd6d"
       define_method(:install) do
         bin.install "fgm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kostikovk/fgm/releases/download/v0.1.0/fgm_0.1.0_linux_arm64.tar.gz"
-      sha256 "94ed0e4487e91acc5d43ea0e0cf46e621dd797bcfd46707aa6e04d7c3926351e"
+      url "https://github.com/kostikovk/fgm/releases/download/v0.2.0/fgm_0.2.0_linux_arm64.tar.gz"
+      sha256 "b9b2946aa6e04ba412b0c266c40e18fd1d37801428811e04b75b3e5e6572596b"
       define_method(:install) do
         bin.install "fgm"
       end
