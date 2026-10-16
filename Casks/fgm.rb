@@ -6,25 +6,25 @@ cask "fgm" do
     end
   end
 
-  version "0.7.2"
+  version "0.7.3"
 
   on_macos do
     on_arm do
-      sha256 "214562c6f229d678654958cfe18e7c2cbd0af925b0ba2da689566fc8b3c9511a"
+      sha256 "7288636d2598f1c7a478a572d2030a29283b816d4d783cb7a78ac53a7b3fe6f0"
       url "https://github.com/kostikovk/fgm/releases/download/v#{version}/fgm_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c9df59d43fd6527f98a4923ea97627583399aa943749de0cfdf140d21292fb29"
+      sha256 "533f2889ebb4c8a638b4370013cb31c89624ad4ae8006aa3fc6232330ee047c2"
       url "https://github.com/kostikovk/fgm/releases/download/v#{version}/fgm_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "75d6fe337a3e5931efe08200e97c1ebdf3ac18b32491bc10dbfa2bb388959525"
+      sha256 "475ba9cede5ee58d00e67db51a2504bf9fd73cafc4d52e5da22b43a6f03e544d"
       url "https://github.com/kostikovk/fgm/releases/download/v#{version}/fgm_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "21fb22276bdbe982ffd54aead252aad5e7babbb60328df08861e393503818917"
+      sha256 "350a9f7a4101cd3f1c5d9d5b92e618908a191bf706518bc4547225a2f40f2ea3"
       url "https://github.com/kostikovk/fgm/releases/download/v#{version}/fgm_#{version}_linux_amd64.tar.gz"
     end
   end
